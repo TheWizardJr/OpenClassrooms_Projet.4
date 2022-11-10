@@ -525,9 +525,23 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 1;
     z-index: 500;
     transition: all .3s ease-in-out;
+    background-color: #286090;
+}
+
+.fa-chevron-up{
+    color: #F3976C;
+}
+
+.fa-twitter:hover, .fa-facebook:hover, .fa-instagram:hover, .fa-dribbble:hover{
+    color: #286090 !important;
+}
+
+.btn-d:hover{
+    background-color: #286090;
+    transform: scale(1.1);
 }
 
 .scrollToTop span {
@@ -784,12 +798,12 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #353F71!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: #13224F!important;
 }
 
 .ltc-white {
@@ -830,6 +844,47 @@ h4 {
 
 .container .portfolio-row p{
     margin-bottom: 50px;
+}
+
+.title-bloc1, .title-bloc5, .title-contact{
+    text-shadow: 2px 2px 2px rgb(0 0 0 / 85%);
+}
+
+.text-footer{
+    color: #353F71 !important;
+}
+
+.title-contact-white, .text-contact{
+    color: #FFFFFF !important;
+}
+
+.form-group, .contact-mail, .contact-adress, .contact-hours, ::placeholder{
+    font-size: 17px;
+}
+
+.contact-mail::before{
+    font-family: "FontAwesome"; 
+    font-weight: 900; 
+    content: "\f0e0";
+    margin-right: 10px;
+}
+
+.contact-adress::before{
+    font-family: "FontAwesome"; 
+    font-weight: 900; 
+    content: "\f041";
+    margin-right: 10px;
+}
+
+.contact-hours::before {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f017";
+    margin-right: 15px;
+}
+
+.adress{
+    margin: 20px 0 20px 0;
 }
 
 @media (max-width: 1024px) {
@@ -1043,6 +1098,10 @@ h4 {
     }
     a[data-lightbox]:hover::before {
         margin-left: 0;
+    }
+    .mail{
+        margin-top: 25px;
+    }
 }
 
 @media (max-width: 400px) {
